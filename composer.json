@@ -1,0 +1,18 @@
+{
+    "require": {
+        "twig/twig": "2.0",
+        "intervention/image": "^2.4",
+        "intervention/imagecache": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Sys\\": "system/"
+        },
+        "files": [
+            "router/routes.php",
+            "app/Helpers/image_helper.php",
+            "app/Helpers/url_helper.php"
+        ]
+    }
+}
