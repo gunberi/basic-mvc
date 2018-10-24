@@ -9,7 +9,7 @@
 
    # Send request via index.php
    
-   # RewriteBase /keyif-frontend/
+   # RewriteBase /
 
    RewriteCond %{REQUEST_FILENAME} !-f
 
