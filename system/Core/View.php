@@ -59,6 +59,14 @@ class View {
         });
         $twig->addFunction($function);
 
+        // request
+        $function = new Twig_Function('request', function() {
+            $request = new \Sys\Core\Request();
+            return $request;
+        });
+        $twig->addFunction($function);
+        $twig->addGlobal('request', new \Sys\Core\Request);
+
         if($block) {
             $template = $twig->load($path . '.twig');
             return $template->renderBlock($block, $data);
